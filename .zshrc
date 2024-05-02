@@ -138,3 +138,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Add scripts folder to PATH
+export PATH=$PATH:$HOME/scripts
