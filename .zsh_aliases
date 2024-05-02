@@ -1,9 +1,10 @@
 # Aliases for utils running in the utils toolbox
 alias htop='toolbox run --container utils htop'
 alias gtweaks='toolbox run --container utils gnome-tweaks'
+alias code='toolbox run --container utils code'
 
 # Dotfile repo alias
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-# Alias for the code command
-alias code='flatpak run com.visualstudio.code'
+# Convenience
+alias lla='ll -ah'
