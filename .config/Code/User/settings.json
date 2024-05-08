@@ -1,6 +1,3 @@
 {
     "terminal.integrated.fontFamily": "MesloLGS NF",
-    "editor.rulers": [
-        90
-    ]
 }
