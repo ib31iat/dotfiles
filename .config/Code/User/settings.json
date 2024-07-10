@@ -1,4 +1,5 @@
 {
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "window.autoDetectColorScheme": true,
+    "svg.preview.mode": "svg",
 }
