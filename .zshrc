@@ -141,8 +141,3 @@ unset __conda_setup
 # Add scripts folder to PATH
 export PATH=$PATH:$HOME/scripts
 
-# Add Gurobi variables
-export GUROBI_HOME=$HOME/gurobi1101/linux64
-export PATH="${PATH}:${GUROBI_HOME}/bin"
-export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
-export GRB_LICENSE_FILE=$HOME/.gurobi.lic
