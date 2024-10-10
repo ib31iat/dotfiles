@@ -6,13 +6,14 @@ flatpak install flathub com.github.xournalpp.xournalpp -y
 flatpak install flathub com.heroicgameslauncher.hgl -y
 flatpak install flathub com.hunterwittenborn.Celeste -y
 flatpak install flathub com.mattjakeman.ExtensionManager -y
+flatpak install flathub com.rtosta.zapzap -y
 flatpak install flathub com.slack.Slack -y
 flatpak install flathub com.spotify.Client -y
 flatpak install flathub com.valvesoftware.Steam -y
 flatpak install flathub com.vysp3r.ProtonPlus -y
+flatpak install flathub im.riot.Riot -y
 flatpak install flathub io.freetubeapp.FreeTube -y
 flatpak install flathub io.github.brunofin.Cohesion -y
-flatpak install flathub io.github.mimbrero.WhatsAppDesktop -y
 flatpak install fedora org.fedoraproject.MediaWriter -y
 flatpak install fedora org.gnome.Calculator -y
 flatpak install fedora org.gnome.Calendar -y

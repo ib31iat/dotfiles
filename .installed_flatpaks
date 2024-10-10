@@ -6,21 +6,19 @@ Xournal++	Take handwritten notes	com.github.xournalpp.xournalpp	com.github.xourn
 Heroic Games Launcher	An Open Source Epic Games, GOG and Amazon Prime Games Launcher.	com.heroicgameslauncher.hgl	com.heroicgameslauncher.hgl/x86_64/stable	flathub
 Celeste	Sync your cloud files	com.hunterwittenborn.Celeste	com.hunterwittenborn.Celeste/x86_64/stable	flathub
 Extension Manager	Browse, install, and manage GNOME Shell Extensions	com.mattjakeman.ExtensionManager	com.mattjakeman.ExtensionManager/x86_64/stable	flathub
+ZapZap	WhatsApp Messenger	com.rtosta.zapzap	com.rtosta.zapzap/x86_64/stable	flathub
 Slack	Business communication	com.slack.Slack	com.slack.Slack/x86_64/stable	flathub
 Spotify	Online music streaming service	com.spotify.Client	com.spotify.Client/x86_64/stable	flathub
 Steam	Launcher for the Steam software distribution service	com.valvesoftware.Steam	com.valvesoftware.Steam/x86_64/stable	flathub
 ProtonPlus	Modern compatibility tools manager	com.vysp3r.ProtonPlus	com.vysp3r.ProtonPlus/x86_64/stable	flathub
+Element	Secure communications platform built around you	im.riot.Riot	im.riot.Riot/x86_64/stable	flathub
 FreeTube	An Open Source YouTube app for privacy	io.freetubeapp.FreeTube	io.freetubeapp.FreeTube/x86_64/stable	flathub
 Cohesion	Unofficial Notion Desktop client	io.github.brunofin.Cohesion	io.github.brunofin.Cohesion/x86_64/stable	flathub
-WhatsApp Desktop	Unofficial WhatsApp Web Desktop client.	io.github.mimbrero.WhatsAppDesktop	io.github.mimbrero.WhatsAppDesktop/x86_64/stable	flathub
 Fedora Media Writer	A tool to create a live USB drive with an edition of Fedora	org.fedoraproject.MediaWriter	org.fedoraproject.MediaWriter/x86_64/stable	fedora
 Fedora Platform	Shared libraries	org.fedoraproject.Platform	org.fedoraproject.Platform/x86_64/f40	fedora
-Freedesktop Platform	Runtime platform for applications	org.freedesktop.Platform	org.freedesktop.Platform/x86_64/22.08	flathub
 Freedesktop Platform	Runtime platform for applications	org.freedesktop.Platform	org.freedesktop.Platform/x86_64/23.08	flathub
 Freedesktop Platform	Runtime platform for applications	org.freedesktop.Platform	org.freedesktop.Platform/x86_64/24.08	flathub
 i386		org.freedesktop.Platform.Compat.i386	org.freedesktop.Platform.Compat.i386/x86_64/23.08	flathub
-Mesa	Mesa - The 3D Graphics Library	org.freedesktop.Platform.GL.default	org.freedesktop.Platform.GL.default/x86_64/22.08	flathub
-Mesa (Extra)	Mesa - The 3D Graphics Library	org.freedesktop.Platform.GL.default	org.freedesktop.Platform.GL.default/x86_64/22.08-extra	flathub
 Mesa	Mesa - The 3D Graphics Library	org.freedesktop.Platform.GL.default	org.freedesktop.Platform.GL.default/x86_64/23.08	flathub
 Mesa (Extra)	Mesa - The 3D Graphics Library	org.freedesktop.Platform.GL.default	org.freedesktop.Platform.GL.default/x86_64/23.08-extra	flathub
 Mesa	Mesa - The 3D Graphics Library	org.freedesktop.Platform.GL.default	org.freedesktop.Platform.GL.default/x86_64/24.08	flathub
@@ -28,6 +26,7 @@ Mesa (Extra)	Mesa - The 3D Graphics Library	org.freedesktop.Platform.GL.default	
 Mesa	Mesa - The 3D Graphics Library	org.freedesktop.Platform.GL32.default	org.freedesktop.Platform.GL32.default/x86_64/23.08	flathub
 Mesa (Extra)	Mesa - The 3D Graphics Library	org.freedesktop.Platform.GL32.default	org.freedesktop.Platform.GL32.default/x86_64/23.08-extra	flathub
 ffmpeg-full		org.freedesktop.Platform.ffmpeg-full	org.freedesktop.Platform.ffmpeg-full/x86_64/23.08	flathub
+i386		org.freedesktop.Platform.ffmpeg_full.i386	org.freedesktop.Platform.ffmpeg_full.i386/x86_64/23.08	flathub
 openh264	OpenH264 Video Codec provided by Cisco Systems, Inc.	org.freedesktop.Platform.openh264	org.freedesktop.Platform.openh264/x86_64/2.2.0	flathub
 openh264	OpenH264 Video Codec provided by Cisco Systems, Inc.	org.freedesktop.Platform.openh264	org.freedesktop.Platform.openh264/x86_64/2.4.1	flathub
 Freedesktop SDK	Tools and headers for developing applications	org.freedesktop.Sdk	org.freedesktop.Sdk/x86_64/23.08	flathub
@@ -53,9 +52,12 @@ Clocks	Keep track of time	org.gnome.clocks	org.gnome.clocks/x86_64/stable	fedora
 Fonts	View fonts on your system	org.gnome.font-viewer	org.gnome.font-viewer/x86_64/stable	fedora
 GnuCash	Manage your finances, accounts, and investments	org.gnucash.GnuCash	org.gnucash.GnuCash/x86_64/stable	flathub
 Adwaita theme	Adwaita widget theme matching the GNOME adwaita theme	org.kde.KStyle.Adwaita	org.kde.KStyle.Adwaita/x86_64/5.15-23.08	flathub
+Adwaita theme	Adwaita widget theme matching the GNOME adwaita theme	org.kde.KStyle.Adwaita	org.kde.KStyle.Adwaita/x86_64/6.7	flathub
 KDE Application Platform	Shared libraries used by KDE applications	org.kde.Platform	org.kde.Platform/x86_64/5.15-23.08	flathub
+KDE Application Platform	Shared libraries used by KDE applications	org.kde.Platform	org.kde.Platform/x86_64/6.7	flathub
 QGnomePlatform	Qt Platform Theme aimed to accommodate GNOME settings	org.kde.PlatformTheme.QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform/x86_64/5.15-23.08	flathub
 QAdwaitaDecorations	Qt decoration plugin implementing Adwaita-like client-side decorations.	org.kde.WaylandDecoration.QAdwaitaDecorations	org.kde.WaylandDecoration.QAdwaitaDecorations/x86_64/5.15-23.08	flathub
+QAdwaitaDecorations	Qt decoration plugin implementing Adwaita-like client-side decorations.	org.kde.WaylandDecoration.QAdwaitaDecorations	org.kde.WaylandDecoration.QAdwaitaDecorations/x86_64/6.7	flathub
 QGnomePlatform-decoration	Qt Platform Theme aimed to accommodate GNOME settings	org.kde.WaylandDecoration.QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration/x86_64/5.15-23.08	flathub
 KeePassXC	Community-driven port of the Windows application “KeePass Password Safe”	org.keepassxc.KeePassXC	org.keepassxc.KeePassXC/x86_64/stable	flathub
 LibreOffice	The LibreOffice productivity suite	org.libreoffice.LibreOffice	org.libreoffice.LibreOffice/x86_64/stable	flathub
