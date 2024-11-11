@@ -4,4 +4,6 @@
     "svg.preview.mode": "svg",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
+    "typst-lsp.exportPdf": "never",
+    "typst-lsp.experimentalFormatterMode": "on",
 }
