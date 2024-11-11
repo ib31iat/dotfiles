@@ -1,5 +1,4 @@
 jock.svg
-mgt19937.typst-preview
 mhutchie.git-graph
 ms-ceintl.vscode-language-pack-de
 ms-python.debugpy
@@ -15,4 +14,5 @@ ms-vscode-remote.remote-ssh-edit
 ms-vscode.remote-explorer
 nvarner.typst-lsp
 tomoki1207.pdf
+vladdesv.vscode-klog
 waderyan.gitblame
