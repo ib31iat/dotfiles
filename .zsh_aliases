@@ -4,6 +4,7 @@ alias gtweaks='toolbox run --container utils gnome-tweaks'
 alias code='toolbox run --container utils code'
 alias amdtop='toolbox run --container utils amdgpu_top'
 alias pdftk='toolbox run --container utils pdftk'
+alias tldr='toolbox run --container utils tldr'
 
 # Dotfile repo alias
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
