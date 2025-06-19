@@ -1,7 +1,7 @@
 # Aliases for utils running in the utils toolbox
 if toolbox -v ls &> /dev/null
-TOOLBOX_UTILS="toolbox run --container utils"
 then
+  TOOLBOX_UTILS="toolbox run --container utils"
   alias htop='$TOOLBOX_UTILS htop'
   alias gtweaks='$TOOLBOX_UTILS gnome-tweaks'
   alias code='$TOOLBOX_UTILS code'
