@@ -102,9 +102,17 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 
 # fzf configuration
-export FZF_CTRL_T_COMMAND="toolbox run --container utils fd -d 1 -H -t f"
-export FZF_CTRL_T_OPTS="--preview 'toolbox run --container utils bat --color=always --line-range :500 {}'"
-export FZF_COMPLETION_OPTS="--preview 'toolbox run --container utils bat --color=always --line-range :500 {}'"
+if toolbox -v ls &> /dev/null
+then
+  TOOLBOX_UTILS="toolbox run --container utils"
+  export FZF_CTRL_T_COMMAND="$TOOLBOX_UTILS fd -d 1 -H -t f"
+  export FZF_CTRL_T_OPTS="--preview '$TOOLBOX_UTILS bat --color=always --line-range :500 {}'"
+  export FZF_COMPLETION_OPTS="--preview '$TOOLBOX_UTILS bat --color=always --line-range :500 {}'"
+else
+  export FZF_CTRL_T_COMMAND="fdfind -d 1 -H -t f"
+  export FZF_CTRL_T_OPTS="--preview 'batcat --color=always --line-range :500 {}'"
+  export FZF_COMPLETION_OPTS="--preview 'batcat --color=always --line-range :500 {}'"
+fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
