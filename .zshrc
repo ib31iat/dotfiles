@@ -98,21 +98,29 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set Defalt Editor
+# Set Default Editor
 export EDITOR=vim
 
-# fzf configuration
-if toolbox -v ls &> /dev/null
-then
-  TOOLBOX_UTILS="toolbox run --container utils"
-  export FZF_CTRL_T_COMMAND="$TOOLBOX_UTILS fd -d 1 -H -t f"
-  export FZF_CTRL_T_OPTS="--preview '$TOOLBOX_UTILS bat --color=always --line-range :500 {}'"
-  export FZF_COMPLETION_OPTS="--preview '$TOOLBOX_UTILS bat --color=always --line-range :500 {}'"
-else
-  export FZF_CTRL_T_COMMAND="fdfind -d 1 -H -t f"
-  export FZF_CTRL_T_OPTS="--preview 'batcat --color=always --line-range :500 {}'"
-  export FZF_COMPLETION_OPTS="--preview 'batcat --color=always --line-range :500 {}'"
+# Set fd and bat for fzf
+if command -v fd > /dev/null; then
+  FD_COMMAND=fd
+elif command -v fdfind > /dev/null; then
+  FD_COMMAND=fdfind
+elif command -v fd-find > /dev/null; then
+  FD_COMMAND=fd-find
 fi
+
+if command -v bat > /dev/null; then
+  BAT_COMMAND=bat
+elif command -v batcat > /dev/null; then
+  BAT_COMMAND=batcat
+fi
+
+# fzf configuration
+export FZF_CTRL_T_COMMAND="$TOOLBOX_UTILS $FD_COMMAND -d 1 -H -t f"
+export FZF_CTRL_T_OPTS="--preview '$TOOLBOX_UTILS $BAT_COMMAND --color=always --line-range :500 {}'"
+export FZF_COMPLETION_OPTS="--preview '$TOOLBOX_UTILS $BAT_COMMAND --color=always --line-range :500 {}'"
+
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
