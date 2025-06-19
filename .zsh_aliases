@@ -1,13 +1,17 @@
 # Aliases for utils running in the utils toolbox
-alias htop='toolbox run --container utils htop'
-alias gtweaks='toolbox run --container utils gnome-tweaks'
-alias code='toolbox run --container utils code'
-alias amdtop='toolbox run --container utils amdgpu_top'
-alias pdftk='toolbox run --container utils pdftk'
-alias tldr='toolbox run --container utils tldr'
+if ! toolbox -v ls &> /dev/null
+TOOLBOX_UTILS="toolbox run --container utils"
+then
+  alias htop='$TOOLBOX_UTILS htop'
+  alias gtweaks='$TOOLBOX_UTILS gnome-tweaks'
+  alias code='$TOOLBOX_UTILS code'
+  alias amdtop='$TOOLBOX_UTILS amdgpu_top'
+  alias pdftk='$TOOLBOX_UTILS pdftk'
+  alias tldr='$TOOLBOX_UTILS tldr'
+fi
 
 # Dotfile repo alias
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='$(which git) --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Convenience
 alias lla='ll -ah'
