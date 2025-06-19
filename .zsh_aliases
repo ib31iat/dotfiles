@@ -1,5 +1,5 @@
 # Aliases for utils running in the utils toolbox
-if ! toolbox -v ls &> /dev/null
+if toolbox -v ls &> /dev/null
 TOOLBOX_UTILS="toolbox run --container utils"
 then
   alias htop='$TOOLBOX_UTILS htop'
